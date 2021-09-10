@@ -1,38 +1,157 @@
-.App {
-  text-align: center;
-}
+.fundo {
+  background-color: #c5e4e7;
+  width: 100%;
+  height: 100vh;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.fundo-caixa {
+  background: #ffffff;
+  height: 400px;
+  width: 700px;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-1 {
+  border: none;
+  background-color: #f3f8fb;
+  height: 50px;
+  width: 95%;
+  border-radius: 0.4rem;
+  text-align: end;
+  background-image: url("./images/icon-dollar.svg");
+  background-repeat: no-repeat;
+  background-position-y: 15px;
+  background-position-x: 10px;
+}
+
+.input {
+  border: none;
+  background-color: #f3f8fb;
+  height: 50px;
+  width: 95%;
+  border-radius: 0.4rem;
+  text-align: end;
+}
+
+h4 {
+  margin: 0;
+}
+
+button {
+  width: 70px;
+  height: 40px;
+  margin: 10px;
+  border: none;
+  border-radius: 0.3rem;
+  font-size: 16px;
+  background: #00474b;
+  color: white;
+  cursor: pointer;
+}
+
+.input-custom {
+  border: none;
+  border-radius: 0.3rem;
+  margin: 10px;
+  width: 70px;
+  height: 40px;
+  background-color: whitesmoke;
+  text-align: end;
+}
+
+button:hover {
+  background: #24c2ad;
+}
+
+.botoes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 10px;
+}
+
+.input-valor {
+  margin-bottom: 25px;
+}
+
+.caixa2 {
+  margin: 10px;
+  background-color: #00474b;
+  height: 90%;
+  width: 50%;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+h1 {
+  margin: 0;
+  color: #30bdac;
+}
+
+.caixa2 h4 {
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.caixa2 small {
+  color: grey;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.caixa2 button {
+  background-color: #0d686d;
+  width: 300px;
+}
+
+.tip-amount {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.total {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.totais {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 30px;
+}
+
+#percent {
+  width: 100%;
+}
+
+::placeholder {
+  text-align: start;
+}
+
+@media (max-width: 800px) {
+  .fundo {
+    height: 150vh;
   }
-  to {
-    transform: rotate(360deg);
+
+  .fundo-caixa {
+    height: 90%;
+    width: 600px;
+    margin: 30px;
+    padding: 30px;
+  }
+
+  .caixa2 {
+    height: 50%;
+    width: 90%;
   }
 }
